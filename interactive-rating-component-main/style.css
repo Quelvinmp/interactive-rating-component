@@ -110,3 +110,39 @@ footer{
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+#thanks-window{
+    background-color: hsl(216, 40%, 15%);
+    border-radius: 15px;
+    padding: 40px 17px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dinamic-information{
+    margin-top: 16px;
+    background-color: hsl(213, 19%, 25%);
+    border-radius: 50px;
+    height: 40px;
+    /* width: fit-content; */
+    padding: 0 12px ;
+    display: flex;
+}
+
+#dinamic-information > p{
+    margin: auto auto;
+    color: hsl(25, 97%, 53%);
+    font-weight: 700;
+}
+
+#thanks-window > h2{
+    color: white;
+    margin-bottom: 0;
+}
+
+#thanks-window > p{
+    color: hsl(216, 12%, 64%);
+    text-align: center;
+}
