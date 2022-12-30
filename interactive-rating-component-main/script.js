@@ -8,6 +8,7 @@ const submitButton = document.getElementById('submit-button');
 
 const mainWindow = document.getElementById('main-window');
 const thanksWindow = document.getElementById('thanks-window');
+const thanksWindowHide = document.getElementsByClassName('hide-window');
 
 // /\ GLOBAL ELEMENTS /\ \\
 
@@ -48,12 +49,12 @@ const changeColorSelectedRatingNumber = () => {
 
 const toggleDisplay = () => {
     mainWindow.classList.toggle('hide-window');
-    thanksWindow.classList.toggle('hide-window');
+    thanksWindowHide[0].classList.toggle('hide-window');
 };
 
 window.onload = () => {
     changeColorRatingNumbers();
     changeColorSubmitButton();
     changeColorSelectedRatingNumber();
-    toggleDisplay();
+    // toggleDisplay();
 };
