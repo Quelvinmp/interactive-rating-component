@@ -61,14 +61,17 @@ body{
 }
 
 #submit-button{
-    background-color: hsl(25, 97%, 53%);
     border-radius: 50px;
     width: 95%;
     height: 50px;
     margin: 30px auto 0;
     display: flex;
-    color: hsl(0, 0%, 100%);
     font-weight: 700;
+}
+
+.mouseoutSubmit{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
 }
 
 #submit-button > p{
@@ -76,9 +79,19 @@ body{
     letter-spacing: 3px;
 }
 
-.mouseover{
+.mouseoverNumbers{
     background-color: hsl(217, 12%, 63%);
     color: white
+}
+
+.mouseoverSubmit{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.selected{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
 }
 
 footer{
