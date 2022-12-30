@@ -37,6 +37,17 @@ body{
     margin: auto auto;
 }
 
+@media (min-width: 1440px) {
+    #main-window{
+        background-color: hsl(216, 40%, 15%);
+        border-radius: 15px;
+        padding: 20px 17px 30px;
+        margin: auto auto;
+        width: 311px;
+        height: 314px;
+    }
+}
+
 #star-icon{
     margin-bottom: 16px;
     background-color: hsl(213, 19%, 25%);
@@ -134,6 +145,20 @@ margin-top: 16px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media (min-width: 1440px) {
+    #thanks-window{
+        background-color: hsl(216, 40%, 15%);
+        border-radius: 15px;
+        padding: 40px 17px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 311px;
+        height: 308px;
+    }
 }
 
 #dinamic-information{
