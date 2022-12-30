@@ -67,8 +67,6 @@ body{
     height: 50px;
     margin: 30px auto 0;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     color: hsl(0, 0%, 100%);
     font-weight: 700;
 }
@@ -76,6 +74,11 @@ body{
 #submit-button > p{
     margin: 18px auto;
     letter-spacing: 3px;
+}
+
+.mouseover{
+    background-color: hsl(217, 12%, 63%);
+    color: white
 }
 
 footer{
