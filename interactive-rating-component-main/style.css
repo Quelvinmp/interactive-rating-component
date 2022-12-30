@@ -30,6 +30,7 @@ body{
 }
 
 #star-icon{
+    margin-bottom: 16px;
     background-color: hsl(213, 19%, 25%);
     border-radius: 50%;
     width: 40px;
@@ -40,6 +41,7 @@ body{
 }
 
 #main-window > h2{
+    margin-bottom: 16px;
     color: hsl(0, 0%, 100%);
 }
 

@@ -10,6 +10,8 @@ const mainWindow = document.getElementById('main-window');
 const thanksWindow = document.getElementById('thanks-window');
 const thanksWindowHide = document.getElementsByClassName('hide-window');
 
+const dinamicText = document.getElementById('change-text');
+
 // /\ GLOBAL ELEMENTS /\ \\
 
 const changeColorRatingNumbers = () => {
@@ -47,14 +49,19 @@ const changeColorSelectedRatingNumber = () => {
     }
 };
 
-const toggleDisplay = () => {
-    mainWindow.classList.toggle('hide-window');
-    thanksWindowHide[0].classList.toggle('hide-window');
+const submitRate = () => {
+    submitButton.addEventListener('click', () => {
+        if (selectedNumber.length > 0) {
+            thanksWindowHide[0].classList.remove('hide-window');
+            mainWindow.classList.add('hide-window');
+            dinamicText.innerHTML = `You selected ${selectedNumber[0].innerText} out of 5`
+        }
+    });
 };
 
 window.onload = () => {
     changeColorRatingNumbers();
     changeColorSubmitButton();
     changeColorSelectedRatingNumber();
-    // toggleDisplay();
+    submitRate();
 };
